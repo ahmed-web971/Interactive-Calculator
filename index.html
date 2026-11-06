@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="calc" aria-label="Calculator">
+        <div class="top">
+            <span class="title">Calculator</span>
+            <button class="theme" id="theme" aria-label="Toggle theme" >&#9680;</button>
+
+        </div>
+        <div class="display" aria-live="polite">
+            <div class="expr" id="expr"></div>
+            <div class="result" id="result">0</div>
+        </div>
+        <div class="keys" id="keys">
+            <button class="key fn" data-k="AC">AC</button>
+            <button class="key fn" data-k="Backspace" aria-label="Backspace" >&#9003;</button>
+            <button class="key fn" data-k="%">%</button>
+            <button class="key op" data-k="/" aria-label="Divide">&divide;</button>
+            <button class="key" data-k="7">7</button>
+            <button class="key" data-k="8">8</button>
+            <button class="key" data-k="9">9</button>
+            <button class="key op" data-k="*" aria-label="Multiply">&times;</button>
+            <button class="key" data-k="4">4</button>
+            <button class="key" data-k="5">5</button>
+            <button class="key" data-k="6">6</button>
+            <button class="key op" data-k="-" aria-label="Subtract">-</button>
+            <button class="key" data-k="1">1</button>
+            <button class="key" data-k="2">2</button>
+            <button class="key" data-k="3">3</button>
+            <button class="key op" data-k="+" aria-label="Add">+</button>
+            <button class="key zero" data-k="0">0</button>
+             <button class="key" data-k=".">.</button>
+              <button class="key eq" data-k="=">=</button>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
